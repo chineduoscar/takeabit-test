@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  color: #111827;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.header-section {
+  background-color: #d97706;
+}
+
+.header-container {
+  padding: 10px 30px;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+}
+.lg-nav {
+  display: none;
+}
+.nav-lists,
+.footer-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.nav-lists a,
+.footer-links a,
+.navs a {
+  color: #fff;
+  text-decoration: none;
+}
+.right-btns {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.login-btn,
+.register-btn {
+  display: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.login-btn {
+  background: #1f2937;
+  color: #fff;
+  border: none;
+}
+.register-btn {
+  background: #fff;
+  color: #d97706;
+  border: 2px solid #d97706;
+}
+.menu-icon {
+  cursor: pointer;
+}
+.sm-nav {
+  display: none;
+  background: #d97706;
+  padding: 20px 30px;
+}
+.navs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style: none;
+}
+.sm-login-btn,
+.sm-register-btn,
+.hero-btn,
+.pizza-card button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.sm-login-btn {
+  background: #1f2937;
+  color: #fff;
+  margin-top: 10px;
+}
+.sm-register-btn {
+  background: #fff;
+  color: #d97706;
+  border: 2px solid #d97706;
+  margin-top: 10px;
+}
+#menu {
+  display: none;
+}
+#menu:checked ~ .sm-nav {
+  display: block;
+}
+
+.hero-section {
+  padding: 60px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+.hero-intro {
+  font-size: 3.5rem;
+  line-height: 1.1;
+}
+.hero-desc {
+  font-size: 20px;
+  color: #6b7280;
+  margin: 25px 0;
+}
+.hero-btn {
+  background: #d97706;
+  color: #fff;
+  padding: 18px 40px;
+  width: auto;
+}
+.hero-img {
+  border-radius: 30px;
+  height: 420px;
+  object-fit: cover;
+  transition: transform 0.5s ease-in;
+}
+
+.hero-img:hover {
+  transform: scale(1.03);
+}
+
+.pizza-section {
+  padding: 80px 30px;
+}
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+.pizza-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+.pizza-card {
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+.pizza-card img {
+  height: 300px;
+  width: 100%;
+}
+.pizza-card h3,
+.pizza-card p,
+.pizza-card h4 {
+  padding: 0 20px;
+}
+.pizza-card h3 {
+  margin: 20px 0 10px;
+}
+.pizza-card p {
+  color: #6b7280;
+}
+.pizza-card h4 {
+  margin: 20px 0;
+  color: #d97706;
+}
+.pizza-card button {
+  width: calc(100% - 40px);
+  margin: 0 20px 20px;
+  background: #d97706;
+  color: #fff;
+}
+
+.why-us {
+  padding: 80px 30px;
+  background: #fff;
+}
+.why-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+.why-card {
+  padding: 30px;
+  background: #fff8f0;
+  border-radius: 20px;
+  text-align: center;
+}
+.why-card h3 {
+  margin-bottom: 15px;
+}
+.why-card p {
+  color: #6b7280;
+}
+
+.cta-section {
+  padding: 80px 30px;
+  text-align: center;
+  background: #d97706;
+  color: #fff;
+}
+.cta-section p {
+  margin: 20px 0;
+}
+.cta-section .hero-btn {
+  background: #1f2937;
+}
+
+.footer {
+  background: #1f2937;
+  color: #fff;
+  padding: 60px 30px;
+  text-align: center;
+}
+.footer h2 {
+  margin-bottom: 15px;
+}
+.footer-links {
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+.copyright {
+  color: #cbd5e1;
+}
+
+@media (min-width: 768px) {
+  .header-section {
+    padding: 20px 40px;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .lg-nav,
+  .login-btn,
+  .register-btn {
+    display: block;
+  }
+  .hero-section {
+    flex-direction: row;
+  }
+  .hero-section > div {
+    flex: 1;
+  }
+  .hero-img {
+    height: 500px;
+  }
+}
